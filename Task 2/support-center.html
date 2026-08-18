@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Review & Support - Travel Agency</title>
+</head>
+<!-- Center align all page contents and set a clean font -->
+<body style="text-align: center; font-family: Arial, sans-serif;">
+
+    <!-- Main site navigation links -->
+    <nav style="margin: 20px;">
+        <a href="home-page.html">Home</a> | 
+        <a href="who-we-are.html">Who We Are</a> | 
+        <a href="support-center.html">Support</a>
+    </nav>
+
+    <main>
+        <!-- Main heading of the support and review page -->
+        <h1>Share Your Trip Review & Support</h1>
+        
+        <!-- Travel review form container -->
+        <form action="home-page.html" method="post" style="display: inline-block; text-align: left; background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); width: 450px; max-width: 90%;">
+            
+            <!-- First Name field -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">First Name:</label>
+                <input type="text" name="firstName" placeholder="Enter your first name" required style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Last Name field -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">Last Name:</label>
+                <input type="text" name="lastName" placeholder="Enter your last name" style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Visited City field -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">City You Visited:</label>
+                <input type="text" name="visitedCity" placeholder="Enter the city you visited" style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Email field -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">Email:</label>
+                <input type="email" name="userEmail" placeholder="user@domain.com" style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Traveler Type (Radio buttons) -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">Traveler Type:</label>
+                <input type="radio" name="traveler" value="solo"> <label>Solo</label>
+                <input type="radio" name="traveler" value="family" style="margin-left: 15px;"> <label>Family</label>
+            </div>
+
+            <!-- What did you like (Checkboxes) -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">What did you like:</label>
+                <input type="checkbox" name="likes[]" value="food"> <label>Food</label>
+                <input type="checkbox" name="likes[]" value="hotel"> <label>Hotel</label>
+                <input type="checkbox" name="likes[]" value="weather"> <label>Weather</label>
+                <input type="checkbox" name="likes[]" value="people"> <label>People</label>
+            </div>
+
+            <!-- Trip Date input -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">Trip Date:</label>
+                <input type="date" name="tripDate" style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Fieldset and Legend containing the word Search -->
+            <fieldset style="margin-bottom: 12px; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+                <legend>Search</legend>
+                <label for="search-box" style="display: block; margin-bottom: 5px;">Find a destination or topic:</label>
+                <!-- Input linked to a datalist for search suggestions -->
+                <input type="text" id="search-box" list="suggestions" placeholder="Type to search..." style="width: 100%; padding: 6px; box-sizing: border-box;">
+                <datalist id="suggestions">
+                    <option value="Flights">
+                    <option value="Hotels">
+                    <option value="Tour Packages">
+                </datalist>
+            </fieldset>
+
+            <!-- File input restricted to .png images -->
+            <div style="margin-bottom: 12px;">
+                <label for="file-upload" style="display: block; margin-bottom: 4px;">Upload Travel Photo (.png only):</label>
+                <input type="file" id="file-upload" name="user-upload" accept=".png" style="width: 100%;">
+            </div>
+
+            <!-- Mobile number text input with exact validation pattern -->
+            <div style="margin-bottom: 15px;">
+                <label for="mobile" style="display: block; margin-bottom: 4px;">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" 
+                       pattern="^(010|012|015)[0-9]{8}$" 
+                       title="Must start with 010, 012, or 015 and be exactly 11 digits"
+                       placeholder="010xxxxxxxx"
+                       required
+                       style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Passport ID field -->
+            <div style="margin-bottom: 12px;">
+                <label style="display: block; margin-bottom: 4px;">Passport ID:</label>
+                <input type="text" name="passportId" placeholder="Enter passport ID" style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Textarea for comments/experience -->
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 4px;">Tell us about your trip experience:</label>
+                <textarea name="userComment" placeholder="Write your review here..." rows="4" style="width: 100%; padding: 6px; box-sizing: border-box;"></textarea>
+            </div>
+
+            <!-- Form Buttons -->
+            <div style="text-align: center; display: flex; justify-content: space-between;">
+                <button type="submit" style="padding: 8px 15px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit Review</button>
+                <button type="reset" style="padding: 8px 15px; background-color: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer;">Clear Data</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
