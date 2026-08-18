@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center</title>
+</head>
+<!-- Center align all page contents and set a clean font -->
+<body style="text-align: center; font-family: Arial, sans-serif;">
+
+    <!-- Main site navigation links -->
+    <nav style="margin: 20px;">
+        <a href="home-page.html">Home</a> | 
+        <a href="who-we-are.html">Who We Are</a> | 
+        <a href="support-center.html">Support</a>
+    </nav>
+
+    <main>
+        <!-- Main heading of the support page -->
+        <h1>Contact Support</h1>
+        
+        <!-- Support form container with centered alignment and clean styling -->
+        <form action="home-page.html" method="post" style="display: inline-block; text-align: left; background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); width: 400px; max-width: 90%;">
+            
+            <!-- Fieldset and Legend containing the word Search -->
+            <fieldset style="margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+                <legend>Search</legend>
+                <label for="search-box" style="display: block; margin-bottom: 5px;">Find a topic:</label>
+                <!-- Input linked to a datalist for search suggestions -->
+                <input type="text" id="search-box" list="suggestions" placeholder="Type to search..." style="width: 100%; padding: 6px; box-sizing: border-box;">
+                <datalist id="suggestions">
+                    <option value="Billing">
+                    <option value="Technical Issues">
+                    <option value="Account Settings">
+                </datalist>
+            </fieldset>
+
+            <!-- File input restricted to .png images -->
+            <div style="margin-bottom: 15px;">
+                <label for="file-upload" style="display: block; margin-bottom: 5px;">Upload Screenshot (.png only):</label>
+                <input type="file" id="file-upload" name="user-upload" accept=".png" style="width: 100%;">
+            </div>
+
+            <!-- Mobile number text input with exact validation pattern -->
+            <div style="margin-bottom: 20px;">
+                <label for="mobile" style="display: block; margin-bottom: 5px;">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" 
+                       pattern="^(010|012|015)[0-9]{8}$" 
+                       title="Must start with 010, 012, or 015 and be exactly 11 digits"
+                       placeholder="010xxxxxxxx"
+                       required
+                       style="width: 100%; padding: 6px; box-sizing: border-box;">
+            </div>
+
+            <!-- Submit button -->
+            <div style="text-align: center;">
+                <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit Request</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
