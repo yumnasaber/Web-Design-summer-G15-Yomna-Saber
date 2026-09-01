@@ -1,0 +1,223 @@
+.hero-bg-image {
+    display: block !important;
+    width: 100% !important;
+    height: 450px !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #c084fc, #e879f9) !important;
+}
+
+.hero-banner * {
+    color: #ffffff !important;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1050;
+    background: transparent !important;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(192, 132, 252, 0.6), rgba(232, 121, 249, 0.6)) !important;
+    z-index: 1 !important;
+}
+
+body {
+    background-color: #fdf2f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a5568;
+}
+
+hr {
+    border-color: #fbcfe8 !important;
+}
+
+h1, h2, h3, h4, h5, span {
+    color: #831843;
+}
+
+.bg-dark {
+    background-color: #db2777 !important;
+}
+
+.bg-opacity-50 {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.bg-opacity-50 span, 
+.bg-opacity-50 p, 
+.bg-opacity-50 h2, 
+.bg-opacity-50 h3 {
+    color: #ffffff !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bg-primary-subtle {
+    background-color: #fce7f3 !important;
+    color: #831843 !important;
+}
+
+input, textarea, select {
+    border: 1px solid #f472b6 !important;
+    background-color: #fffbfe !important;
+    color: #4a5568 !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #db2777 !important;
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.15) !important;
+    outline: none;
+}
+
+#contact .bg-dark {
+    background: linear-gradient(135deg, #c084fc, #e879f9) !important;
+}
+
+#contact .bg-dark * {
+    color: #ffffff !important;
+}
+
+.border {
+    border-color: #fbcfe8 !important;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.08);
+    border-radius: 12px;
+}
+
+/* تنسيق الـ Dropdown وحل مشكلة تداخل وتداخل الكلام فوق بعضه */
+.dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid #fbcfe8 !important;
+    box-shadow: 0 10px 25px rgba(219, 39, 119, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 8px 0 !important;
+    z-index: 1060 !important;
+    animation: fadeInDrop 0.2s ease-in-out;
+}
+
+@keyframes fadeInDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-item {
+    color: #831843 !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    line-height: 1.5 !important;
+    white-space: nowrap !important;
+}
+
+.dropdown-item:hover {
+    background-color: #fce7f3 !important;
+    color: #db2777 !important;
+    padding-left: 20px !important;
+}
+
+.bg-opacity-50 .border.rounded-2,
+.bg-opacity-50 div.text-white.border {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    font-weight: bold;
+}
+
+#contact form button[type="submit"],
+#contact .col-12.rounded-2.bg-dark {
+    background-color: #db2777 !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+#contact form button[type="submit"]:hover,
+#contact .col-12.rounded-2.bg-dark:hover {
+    background-color: #9333ea !important;
+}
+
+#contact .bg-dark input + button,
+#contact .bg-dark button.bg-white {
+    background-color: #db2777 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#contact .bg-dark button.bg-white:hover {
+    background-color: #9333ea !important;
+}
+
+.navbar button.bg-white,
+.navbar .d-flex button:first-child {
+    background-color: #db2777 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+}
+
+.navbar button.bg-white:hover,
+.navbar .d-flex button:first-child:hover {
+    background-color: #9333ea !important;
+}
+
+.navbar button.bg-transparent {
+    border-color: #fbcfe8 !important;
+    color: #ffffff !important;
+}
+
+.navbar button.bg-transparent:hover {
+    background-color: rgba(219, 39, 119, 0.2) !important;
+}
+
+.hero-content a.border-white,
+.hero-content a[href="#shop"] {
+    background-color: #db2777 !important;
+    border-color: #db2777 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-content a.border-white:hover,
+.hero-content a[href="#shop"]:hover {
+    background-color: #9333ea !important;
+    border-color: #9333ea !important;
+}
+
+button, a, input[type="submit"] {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out !important;
+}
+
+button:hover, a.border-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(219, 39, 119, 0.25);
+}
+
+#shop button {
+    border: 1px solid transparent !important;
+}
+
+#shop button:hover {
+    background-color: #fce7f3 !important;
+    color: #db2777 !important;
+}

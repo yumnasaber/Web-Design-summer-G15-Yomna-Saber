@@ -1,0 +1,146 @@
+]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Chat - Contact</title>
+    <style>
+        body {
+            background-color: #fdf2f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.15);
+            overflow: hidden;
+            width: 800px;
+            border: 1px solid #fbcfe8;
+        }
+
+        .div-style {
+            background: linear-gradient(135deg, #db2777, #9333ea);
+            color: #ffffff;
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .div-style h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .div-style p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #fce7f3;
+        }
+
+        .form {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #fffbfe;
+        }
+
+        .form .h1 {
+            font-size: 24px;
+            color: #831843;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        .required {
+            font-size: 12px;
+            color: #db2777;
+        }
+
+        .form input, .form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #f472b6;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            color: #4a5568;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form input:focus, .form textarea:focus {
+            border-color: #db2777;
+            box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.15);
+        }
+
+        .form textarea {
+            resize: vertical;
+        }
+
+        .button {
+            background-color: #db2777;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 15px;
+        }
+
+        .button:hover {
+            background-color: #be185d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="div-style">
+            <h1>let's chat</h1>
+            <div>
+                <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                <p>Feel free to send me a message in the contact form</p>
+            </div>
+        </div>
+
+        <form class="form" action="" autocomplete="off">
+            <h1 class="h1">contact</h1>
+            <span class="required">* Required</span>
+
+            <input name="firstName" placeholder="enter first name" required>
+
+            <input type="email" name="email" placeholder="enter your email" required>
+
+            <input placeholder="Company">
+
+            <input type="text" name="phone" placeholder="phone" pattern="01(0|1|2|5)[0-9]{8}" maxlength="11">
+
+            <textarea placeholder="Message" rows="4"></textarea>
+
+            <div>
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>

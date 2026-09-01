@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #fdf2f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.12);
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 1px solid #fbcfe8;
+        }
+
+        div, fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #831843;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="url"],
+        select {
+            padding: 10px 14px;
+            border: 1px solid #f472b6;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            color: #4a5568;
+            background-color: #fffbfe;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #db2777;
+            box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.15);
+        }
+
+        h2 {
+            font-size: 13px;
+            color: #9d174d;
+            background-color: #fce7f3;
+            padding: 8px;
+            border-radius: 6px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .radio-group, .checkbox-group {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            color: #500724;
+        }
+
+        fieldset {
+            border: 1px solid #f472b6;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: #fffbfe;
+        }
+
+        legend {
+            color: #db2777;
+            font-weight: 600;
+            padding: 0 6px;
+        }
+
+        input[type="submit"], button[type="submit"] {
+            background-color: #db2777;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover, button[type="submit"]:hover {
+            background-color: #be185d;
+        }
+
+        input[type="reset"], button[type="reset"] {
+            background-color: #f3e8ff;
+            color: #6b21a8;
+            border: 1px solid #d8b4fe;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="reset"]:hover, button[type="reset"]:hover {
+            background-color: #e9d5ff;
+        }
+
+        input[type="file"] {
+            font-size: 13px;
+            color: #701a75;
+        }
+    </style>
+</head>
+<body>
+    <form>
+
+        <div>
+            <label>First Name:</label>
+            <input type="text" id="userFirstName" name="firstName">
+        </div>
+
+        <div>
+            <label>Last Name:</label>
+            <input type="text" id="userLastName" name="lastName">
+        </div>
+
+        <div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vel.</h2>
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="userEmail">
+        </div>
+
+        <div>
+            <label>Shipping Area</label>
+            <input type="text" name="shipping" value="Alex" readonly>
+            <input type="text" name="shippingArea" value="Alex" readonly>
+        </div>
+
+        <div>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="radio-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="0"> <label>Male</label>
+            <input type="radio" name="gender" value="1"> <label>Female</label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>Courses</label>
+            <input type="checkbox" name="courses[]" value="html"> <label>Html</label>
+            <input type="checkbox" name="courses[]" value="css"> <label>Css</label>
+            <input type="checkbox" name="courses[]" value="js"> <label>Js</label>
+            <input type="checkbox" name="courses[]" value="bootstrap" checked> <label>Bootstrap</label>
+        </div>
+
+        <div>
+            <label>Age</label>
+            <input type="number" name="userAge" min="8" max="18">
+        </div>
+
+        <div>
+            <select name="track">
+                <option value="10" disabled selected>please choose your track</option>
+                <option value="0">Frontend</option>
+                <option value="1">Backend</option>
+                <option value="2">Network</option>
+                <option value="3">Mobile</option>
+            </select>
+
+            <select name="track" multiple>
+                <option value="10" disabled selected>please choose your track</option>
+                <option value="0">Frontend</option>
+                <option value="1">Backend</option>
+                <option value="2">Network</option>
+                <option value="3">Mobile</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Upload Files</label>
+            <input type="file" name="userFile" multiple>
+        </div>
+
+        <div>
+            <label for="website">Homepage</label>
+            <input type="url" id="website" name="website" pattern="https?://.+" title="Include http://">
+        </div>
+
+        <div>
+            <label>ID</label>
+            <input type="text" minlength="10" maxlength="14">
+        </div>
+
+        <fieldset>
+            <legend>Search</legend>
+            <label>Search:</label>
+            <input list="searchOptions" name="search">
+            <datalist id="searchOptions">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Bootstrap">
+            </datalist>
+        </fieldset>
+
+        <div>
+            <label>Profile Image</label>
+            <input type="file" name="userImage" accept=".png">
+        </div>
+
+        <div>
+            <label>Mobile Number</label>
+            <input type="text" name="userMobile" pattern="(010|011|012|015)[0-9]{8}" maxlength="11" title="Mobile must be 11 digits and start with 010/011/012/015">
+        </div>
+
+        <input type="submit" value="login">
+        <button type="submit">Register</button>
+
+        <input type="reset" value="clear Data">
+        <button type="reset">Clear Info</button>
+
+    </form>
+</body>
+</html>

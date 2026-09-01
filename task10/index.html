@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws n' Play — Everything Your Pet Needs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav + hero -->
+    <section class="hero-banner position-relative">
+        <img src="images/hero.png" alt="Happy golden retriever" class="hero-bg-image w-100">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <div class="container-fluid px-0 position-relative">
+            <nav class="navbar navbar-expand-md p-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center ms-3 text-white" href="#">
+                        <i class="fa-solid fa-paw paw-top text-white"></i><sub><i
+                                class="fa-solid fa-paw paw-bottom text-white"></i></sub>
+                        <span class="ms-1 fw-bold">Paws n' Play</span>
+                    </a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav mx-auto gap-md-4 mt-3 mt-md-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#shop" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#shop">Dogs</a></li>
+                                    <li><a class="dropdown-item" href="#shop">Cats</a></li>
+                                    <li><a class="dropdown-item" href="#shop">Fish</a></li>
+                                    <li><a class="dropdown-item" href="#shop">Birds</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#services" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#services">Grooming</a></li>
+                                    <li><a class="dropdown-item" href="#services">Boarding</a></li>
+                                    <li><a class="dropdown-item" href="#services">Veterinary</a></li>
+                                    <li><a class="dropdown-item" href="#services">Training</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="d-flex gap-2 mt-3 mt-md-0">
+                            <button class="bg-white text-dark p-2 px-3 border-0 rounded-2">Get started</button>
+                            <button class="bg-transparent text-white p-2 px-3 border border-white rounded-2 d-none d-lg-inline-block">Book
+                                demo</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-content py-5 px-4 px-md-5">
+                <div class="row">
+                    <div class="col-md-6 col-11 ms-md-3">
+                        <p class="text-white display-5 fw-bold">Pawsitively Perfect: Where Every Pet's Dream
+                            Comes True!</p>
+                        <p class="text-white">Welcome to Paws n' Play, the ultimate destination for pet lovers.
+                            Explore a world of tail-wagging joy and furry companionship with our wide range of
+                            products and services — from pampering essentials to playful toys, we're here to
+                            make every moment with your pet pawsitively perfect.</p>
+                        <a href="#shop"
+                            class="d-inline-flex align-items-center gap-2 rounded-2 text-white border-white border text-center px-4 py-2 text-decoration-none mt-3">
+                            <span>Shop Now</span>
+                            <i class="fa-solid fa-paw paw-top text-white"></i><sub><i
+                                    class="fa-solid fa-paw paw-bottom text-white"></i></sub>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-shop -->
+    <section id="shop">
+        <div class="container">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                <span>Shop</span>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="border rounded-2 p-3">
+                    <div class="d-flex justify-content-between align-items-center position-relative mb-2">
+                        <h2 class="mb-0">Featured Products</h2>
+                        <div class="position-relative">
+                            <input type="search" placeholder="Search products" class="ps-3 pe-5 py-1 rounded-2">
+                            <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y me-2"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <button class="border-0 bg-primary-subtle rounded-2 px-3 py-1">Random</button>
+                        <button class="border-0 bg-transparent px-3 py-1">Cats</button>
+                        <button class="border-0 bg-transparent px-3 py-1">Dogs</button>
+                        <button class="border-0 bg-transparent px-3 py-1">Fish</button>
+                        <button class="border-0 bg-transparent px-3 py-1">Birds</button>
+                    </div>
+                    <div class="row mb-4 mt-4">
+                        <div class="col-md-4 p-2 col-sm-12">
+                            <div class="position-relative">
+                                <img src="images/Product_Card_.png" alt="Multivitamin for cats" class="w-100">
+                                <div
+                                    class="bg-dark bg-opacity-50 p-2 text-white w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <span>EGP 350.00</span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="fs-5 mb-1">Multivitamin For Cats</p>
+                                        <p class="small">Daily support for coat, joints, and energy.</p>
+                                    </div>
+                                    <div class="p-1 text-center d-flex justify-content-center gap-2">
+                                        <div class="text-white border rounded-2 px-2">- 1 +</div>
+                                        <button class="text-white border-0 bg-dark rounded-2 px-3">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-2 col-sm-12">
+                            <div class="position-relative">
+                                <img src="images/Product Card2.png" alt="Grain-free dog kibble" class="w-100">
+                                <div
+                                    class="bg-dark bg-opacity-50 p-2 text-white w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <span>EGP 480.00</span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="fs-5 mb-1">Grain-Free Dog Kibble</p>
+                                        <p class="small">Real chicken, no fillers, 3kg bag.</p>
+                                    </div>
+                                    <div class="p-1 text-center d-flex justify-content-center gap-2">
+                                        <div class="text-white border rounded-2 px-2">- 1 +</div>
+                                        <button class="text-white border-0 bg-dark rounded-2 px-3">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-2 d-none d-md-block">
+                            <div class="position-relative">
+                                <img src="images/Product_Card.png" alt="Interactive bird toy" class="w-100">
+                                <div
+                                    class="bg-dark bg-opacity-50 text-white p-2 w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <span>EGP 220.00</span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="fs-5 mb-1">Interactive Bird Toy</p>
+                                        <p class="small">Keeps beaks busy and minds sharp.</p>
+                                    </div>
+                                    <div class="p-1 text-center d-flex justify-content-center gap-2">
+                                        <div class="text-white border rounded-2 px-2">- 1 +</div>
+                                        <button class="text-white border-0 bg-dark rounded-2 px-3">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justify-content-end d-flex">
+                            <a href="#" class="text-decoration-none">View More &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section id="services">
+        <div class="container mt-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                <span>Service</span>
+            </div>
+            <hr>
+
+            <div class="border rounded-2 p-2">
+                <div class="row p-2 g-3">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="position-relative overflow-hidden h-100">
+                                    <img src="images/girl.png" alt="Pet grooming service" class="w-100 h-75">
+                                    <div
+                                        class="text-white text-center p-2 bg-dark bg-opacity-50 w-100 h-75 position-absolute start-0 top-0 d-flex flex-column justify-content-center">
+                                        <span class="fs-4">Grooming</span>
+                                        <p class="small px-2">Baths, trims, and nail care that leave your pet
+                                            looking (and feeling) their best.</p>
+                                        <button class="text-white bg-dark border-1 text-center rounded-2 mx-auto px-3 py-1">Learn
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="position-relative overflow-hidden h-100">
+                                    <img src="images/Dogs.png" alt="Pet boarding service" class="w-100 h-75">
+                                    <div
+                                        class="text-white text-center p-2 bg-dark bg-opacity-50 w-100 h-75 position-absolute start-0 top-0 d-flex flex-column justify-content-center">
+                                        <span class="fs-4">Boarding</span>
+                                        <p class="small px-2">A safe, comfortable stay for your pet whenever you're
+                                            away from home.</p>
+                                        <button class="text-white bg-dark border-1 text-center rounded-2 mx-auto px-3 py-1">Learn
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="position-relative overflow-hidden h-100">
+                                    <img src="images/Doctor.png" alt="Veterinary service" class="w-100 h-100">
+                                    <div
+                                        class="text-white text-center p-2 bg-dark bg-opacity-50 w-100 h-100 position-absolute start-0 top-0 d-flex flex-column justify-content-center">
+                                        <span class="fs-4">Veterinary</span>
+                                        <p class="small px-2">Checkups, vaccinations, and care from licensed vets
+                                            who know your pet by name.</p>
+                                        <button class="text-white bg-dark border-1 text-center rounded-2 mx-auto px-3 py-1">Learn
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="position-relative overflow-hidden h-100">
+                                    <img src="images/games.png" alt="Pet training service" class="w-100 h-100">
+                                    <div
+                                        class="text-white text-center p-2 bg-dark bg-opacity-50 w-100 h-100 position-absolute start-0 top-0 d-flex flex-column justify-content-center">
+                                        <span class="fs-4">Training</span>
+                                        <p class="small px-2">Positive, reward-based training for pets of every
+                                            age and temperament.</p>
+                                        <button class="text-white bg-dark border-1 text-center rounded-2 mx-auto px-3 py-1">Learn
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="#" class="text-decoration-none">
+                            <div class="position-relative overflow-hidden h-100">
+                                <img src="images/Weestar_a_pale_colorful_gradient_Chupa_Chup_shaped_pet_house_by_bfa.png"
+                                    alt="Pet adoption" class="w-100 h-100">
+                                <div
+                                    class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center bg-dark bg-opacity-50">
+                                    <span class="text-white fs-4">Adoption</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section id="about">
+        <div class="container mt-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                <span>About Us</span>
+            </div>
+            <hr>
+            <div class="row align-items-center g-4">
+                <div class="col-md-7">
+                    <p>At Paws n' Play, our journey began with a simple, profound love for animals. Inspired by
+                        the companionship and joy pets bring into our lives, we set out to build a place where
+                        pets and their owners could experience unparalleled happiness and care.</p>
+                    <p>We hand-select every product and service with the same standard: quality that's worth a
+                        pet's trust. From nutritious food and enriching toys to expert grooming and healthcare,
+                        each offering is chosen to meet the real needs of the animals we serve.</p>
+                    <p>Our commitment doesn't stop at the shelf. Through educational resources, attentive
+                        support, and a community that celebrates the bond between pets and their people, we work
+                        to help every owner give their companion the best possible care.</p>
+                    <p>Join us in building a world where every pet is cherished, every need is met, and every
+                        tail wags a little more because of it.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/Weestar_hyperrealistic_food_photography_a_rushton_food_toy_pet__7c9c8610-ba6a-4e9f-9005-12c111c3ce85.png" alt="Cat at Paws n' Play" class="w-100 rounded-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our team -->
+    <section id="team">
+        <div class="container mt-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                <span>Our Team</span>
+            </div>
+            <hr>
+            <div class="row p-2">
+                <div class="col-md-3 col-6 mb-3">
+                    <img src="images/nur.jpg" alt="Dr. Olivia Rhye" class="w-100 h-50">
+                    <h4>Dr. Olivia Rhye</h4>
+                    <p class="mb-1">Senior Veterinarian</p>
+                    <p class="small text-muted">15+ years in small-animal medicine and surgery.</p>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <img src="images/nur1.jpg" alt="Phoenix Baker" class="w-100 h-50">
+                    <h4>Phoenix Baker</h4>
+                    <p class="mb-1">Assistant Veterinarian</p>
+                    <p class="small text-muted">Focused on preventive care and dental health.</p>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <img src="images/Doc.jpg" alt="Lana Steiner" class="w-100 h-50">
+                    <h4>Lana Steiner</h4>
+                    <p class="mb-1">Resident Veterinarian</p>
+                    <p class="small text-muted">Specializes in exotic and avian patients.</p>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <img src="images/Hero_bg.png" alt="Demi Wilkinson" class="w-100 h-50">
+                    <h4>Demi Wilkinson</h4>
+                    <p class="mb-1">Intern Veterinarian</p>
+                    <p class="small text-muted">Completing residency in general practice.</p>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blogs -->
+    <section id="blog">
+        <div class="container mt-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                <span>Blog</span>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <h3>Milestone: 20,000 Pets Treated</h3>
+                    <hr>
+                    <p>This month our vet team hit a milestone we're proud of — twenty thousand pets treated
+                        since we opened our doors. Every checkup, surgery, and follow-up visit is part of the
+                        same promise: treat every animal like family.</p>
+                    <h4>What's next</h4>
+                    <p>We're expanding our boarding wing and adding two more vets to the team, so appointments
+                        stay quick even as we grow.</p>
+                    <button class="bg-dark text-white p-2 px-3 border-0 rounded-2">Read More</button>
+                </div>
+                <div class="col-md-6 d-md-block d-none position-relative">
+                    <img src="images/image.png" alt="Vet team milestone" class="w-100 rounded-2">
+                    <i
+                        class="fa-regular fa-circle-play position-absolute start-50 top-50 text-white fa-4x translate-middle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="contact">
+        <div class="container">
+            <div class="row bg-dark p-5 mb-3 rounded-2">
+                <div class="d-flex align-items-center text-white mb-3">
+                    <i class="fa-solid fa-paw paw-top"></i><sub><i class="fa-solid fa-paw paw-bottom"></i></sub>
+                    <span class="ms-1">Get in touch</span>
+                </div>
+                <hr class="border-white">
+                <div class="flex-column-reverse flex-md-row row">
+                    <div class="col-md-6 col-sm-12 rounded-2">
+                        <form class="form p-4 border bg-white rounded-2">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" id="firstName" placeholder="First name"
+                                        class="form-control rounded-2">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" id="lastName" placeholder="Last name"
+                                        class="form-control rounded-2">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" placeholder="you@company.com"
+                                        class="form-control rounded-2">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="checkbox" id="privacy" class="form-check-input me-1">
+                                    <label for="privacy">You agree to our friendly <span
+                                            class="text-decoration-underline">privacy policy</span></label>
+                                </div>
+                                <div class="col-12 rounded-2 bg-dark p-2">
+                                    <button type="submit"
+                                        class="bg-transparent border-0 text-white w-100 text-center">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mt-5">
+                        <div class="row">
+                            <div class="col-6 p-1 mb-3">
+                                <i class="fa-regular fa-envelope text-white"></i>
+                                <h5 class="text-white">Email</h5>
+                                <p class="text-info-emphasis">Our friendly team is here to help</p>
+                                <p class="text-white">hello@pawsnplay.com</p>
+                            </div>
+                            <div class="col-6 p-1 mb-3">
+                                <i class="fa-regular fa-comment text-white"></i>
+                                <h5 class="text-white">Live chat</h5>
+                                <p class="text-info-emphasis">Our friendly team is here to help</p>
+                                <p class="text-white">Start new chat</p>
+                            </div>
+                            <div class="col-6 p-1">
+                                <i class="fa-solid fa-location-dot text-white"></i>
+                                <h5 class="text-white">Office</h5>
+                                <p class="text-info-emphasis">Come say hello at our office HQ</p>
+                                <p class="text-white">12 Nour St, Nasr City, Cairo</p>
+                            </div>
+                            <div class="col-6 p-1">
+                                <i class="fa-solid fa-phone text-white"></i>
+                                <h5 class="text-white">Phone</h5>
+                                <p class="text-info-emphasis">Mon–Fri from 9am to 6pm</p>
+                                <p class="text-white">+20 100 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-white mt-5">
+                <div class="col-md-6 col-sm-12">
+                    <p class="text-white">Join our newsletter</p>
+                    <p class="text-info-emphasis">Be the first to hear about new products, promos, and offers.</p>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex gap-2 align-items-start">
+                    <input type="email" placeholder="Enter your email" class="p-2 rounded-2">
+                    <button class="bg-white text-dark p-2 rounded-2">Subscribe</button>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-2 col-sm-12 text-white">
+                        <div>
+                            <i class="fa-solid fa-paw paw-top"></i><sub><i
+                                    class="fa-solid fa-paw paw-bottom"></i></sub> Paws n' Play
+                        </div>
+                        <p class="text-info-emphasis">Where wagging tails and purring hearts reign supreme.</p>
+                    </div>
+                    <div class="row col-md-10 col-12">
+                        <div class="p-3 col-md-3 col-6">
+                            <h5 class="text-white">Shop</h5>
+                            <p class="text-info-emphasis mb-1">Pet Food</p>
+                            <p class="text-info-emphasis mb-1">Toys</p>
+                            <p class="text-info-emphasis mb-1">Nutrition</p>
+                            <p class="text-info-emphasis mb-0">Accessories</p>
+                        </div>
+                        <div class="p-3 col-md-3 col-6">
+                            <h5 class="text-white">Services</h5>
+                            <p class="text-info-emphasis mb-1">Grooming</p>
+                            <p class="text-info-emphasis mb-1">Boarding</p>
+                            <p class="text-info-emphasis mb-1">Veterinary</p>
+                            <p class="text-info-emphasis mb-0">Training</p>
+                        </div>
+                        <div class="p-3 col-md-3 col-6">
+                            <h5 class="text-white">Company</h5>
+                            <p class="text-info-emphasis mb-1">About us</p>
+                            <p class="text-info-emphasis mb-1">Our team</p>
+                            <p class="text-info-emphasis mb-1">Careers</p>
+                            <p class="text-info-emphasis mb-0">Blog</p>
+                        </div>
+                        <div class="p-3 col-md-3 col-6">
+                            <h5 class="text-white">Support</h5>
+                            <p class="text-info-emphasis mb-1">Contact us</p>
+                            <p class="text-info-emphasis mb-1">FAQs</p>
+                            <p class="text-info-emphasis mb-1">Shipping</p>
+                            <p class="text-info-emphasis mb-0">Returns</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-white">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-6 col-sm-12 text-white">
+                        <p class="mb-0">© 2024 Paws n' Play. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-white p-1 col-sm-12 text-md-end">
+                        <a href="#" class="text-white me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

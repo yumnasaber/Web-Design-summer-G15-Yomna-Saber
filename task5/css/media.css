@@ -1,0 +1,272 @@
+
+@media (max-width: 1080px) {
+     .universal-btn{
+        width: 30%;
+    }
+    .search-container form{
+        width: 60%;
+    }
+    /* ------------awesome-------------- */
+    .second-btn{
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 1000px) { 
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        width: 80%;
+    }
+    .btn-box{
+        width: 20%;
+    }
+      .hide-s-bar{
+        display: none;
+    }
+    .left-text{
+        width: 60%;
+        right: 60%;
+        top: 15%;
+    }
+
+     /* ---------appartmaent---------- */
+
+    .card-details h3{
+        font-size: 15px;
+
+    }
+    .card-details .card-numbers .left-num {
+        width: 15%;
+        align-items: center;
+    }
+    .card-numbers .right-num{
+        flex-direction: column;
+        align-items: flex-end;
+        width: 70%;
+    }
+    .right-num h4 , .right-num span , .underlined-a{ 
+        font-size: 12px;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+    /* -----------HOW IT WORK--------- */
+    .card-head{
+        gap:10%;
+    }
+    .cards-contianer span , .cards-contianer h3 {
+        font-size: 15px;
+    }
+    /* -----------agents-------------- */
+    .card-numbers2 {
+         display: flex;
+         column-gap: 15%;
+         padding: 0% 3%;
+         justify-content: space-between;
+         padding: 0% 5%;
+    }
+    .card-numbers2  .left-num2{
+          width: 20%;
+         display: flex;
+          align-self: flex-end;
+    }
+
+    
+ }
+
+
+
+
+@media (max-width: 770px) {
+    .logo{
+        width: 40%;
+        /* text-align: center; */
+    }
+    .menu{
+        display: none;
+    }
+    .btn-box{
+        display: none
+    }
+    .hidden-btn{
+        display: block;
+        /* width: %; */
+    }
+     .left-text{
+        width: 80%;
+        right: 35%;
+        top: 15%;
+    }
+    /* ---------company-------- */
+   
+    .company-left-sec {
+        width: 100%;
+
+    }
+    .company-left-sec h2{
+        width: 90%;
+        margin: auto;
+        font-size: 35px;
+    }
+    .two-paragraph{
+        display: none;
+    }
+    .company-right-sec{
+    width: 100%;
+    }
+
+  .company-right-sec .sqare{
+        width: 40%;
+        padding: 8% 2%;
+
+    }
+    /* -----------appartments----------- */
+   
+     .universal-btn{
+        width: 35%;
+    }
+
+    /* ------------HOW IT WORK----- */
+     .cards-contianer span , .cards-contianer h3 {
+        font-size: 13px;
+    }
+        /* ------------Services--------- */
+    .service-left-img{
+        display: none;
+    }
+    .service-right-details{
+        width: 80%;
+        margin: auto;
+    }
+
+      /* ------------awesome-------------- */
+    .second-btn{
+        width: 75%;
+    }
+    /* ------------footer-------------- */
+    .bottom-footer{
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+    }
+    .copywrite{
+        display: none;
+   
+    }
+    .copywrite-hidden{
+        width: 100%;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+   
+}
+    
+   
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 690px) {
+   .left-text h1{
+    font-size: 40px;
+      /* right: 20%; */
+    }
+    .form-container{
+        display: none;
+    }
+     /* -----------appartments----------- */
+      .card-details h3{
+        font-size: 12px;
+
+    }
+     /* .search-container{
+        flex-wrap: wrap;
+        gap: 5px;
+     } */
+     .universal-btn{
+        /* width: 40%; */
+        /* padding: 5%; */
+        display: none;
+    }
+     .search-container form{
+        width: 100%;
+    }
+    /* -------------agents--------------- */
+    .card-details .card-numbers2{
+        column-gap: 25%;
+    }
+    /* -----------awesome----------- */
+    .awesome-container{
+        gap: 50px;
+    }
+    .awe-line-left {
+        display: none;
+    }
+    .awe-line-right{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 650px) {
+        .left-text  h1{
+            font-size: 30px;
+        }
+    .card-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+    .agents-cards-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .top-footer h2{
+        font-size: 25px;
+    }
+    .cards-contianer{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .how-3cards{
+         width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
