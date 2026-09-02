@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    color: #4a5568;
+    font-family: "Montserrat", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.w-80--m-auto{
+    width: 80%;
+    margin: auto;
+}
+:root{
+    --primecolor: #db2777;
+}
+.oak-btn{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 1% 5.5%;
+    border-radius: 30px;
+    border: 1px solid var(--primecolor);
+    transition: all 0.3s ease;
+}
+.oak-btn:hover {
+    background-color: #9333ea;
+    border-color: #9333ea;
+    color: white;
+}
+.margin-right{
+    margin-right: 0%;
+}
+
+.nav{
+    width: 80%;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #4a5568;
+    padding: 2% 0;
+}
+.logo{
+    display: flex;
+    width: 5%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.logo a{
+    font-size: 21px;
+    font-weight: 600;
+    color: #831843;
+}
+nav ul{
+    display: flex;
+    width: 30%;
+}
+.hidden-btn{
+    display: none;
+}
+nav ul li{
+    flex: 1;
+    width: 25%;
+    justify-content: space-between;
+}
+nav ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--primecolor);
+}
+
+.new-era {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5% 0;
+}
+.head{
+    margin: 5% 0%;
+}
+.new-era h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 2%;
+    color: #831843;
+}
+.new-era p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 3%;
+    color: #6b7280;
+}
+.new-era .prime-btn{
+    background-color: var(--primecolor);
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .left-img, .right-img{
+    width: 48%;
+}
+.container .left-img img, .right-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.Wellbeing{
+    background-color: #fdf2f8;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+.welldoing-container{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    column-gap: 4%;
+}
+.wellbeing-content{
+    width: 70%;
+    padding: 5%;
+}
+.wellbeing-content h3{
+    font-size: 40px;
+    color: #831843;
+}
+.left-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    column-gap: 6%;
+}
+.wellbeing-logo{
+    width: 30%;
+}
+.wellbeing-logo .leaf{
+    padding: 3%;
+    display: inline-block;
+    border-radius: 6%;
+}
+.wellbeing-logo p{
+    margin-top: 5%;
+    color: #6b7280;
+}
+.welldoing-right-img{
+    align-self: flex-end;
+}
+
+.fresh-organc{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5% 0;
+}
+.left-img, .right-content{
+    width: 45%;
+}
+.left-img img{
+    width: 100%;
+}
+.right-content{
+    margin-top: 5%;
+}
+.right-content h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #831843;
+}
+.right-content>p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5% 0;
+    color: #6b7280;
+}
+.right-content .item{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right-content .item .left-line-icon img{
+    padding: 20%;
+    border: 2px solid var(--primecolor);
+    border-radius: 50%;
+}
+.right-content .item .right-line p {
+    color: #6b7280;
+}
+
+.welldoing-reverse{
+    background-color: #fdf2f8;
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    width: 80%;
+    margin: auto;
+}
+.welldoing-reverse-container{
+    display: flex;
+    align-items: center;
+    column-gap: 2%;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0%;
+    position: relative;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+.items img{
+    position: absolute;
+    bottom: 75%;
+}
+.items .line{
+    width: 40%;
+}
+.right-edge{
+    margin-right: 18%;
+}
+.items .line>p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7280;
+}
+
+.bg-section{
+    padding: 5% 0 19% 0;
+}
+.bg{
+    position: relative;
+    aspect-ratio: 100 / 77;
+    background-size: 100% 77%;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-image: url(../images/wellbeing-bg.png);
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 16%;
+    left: 5.5%;
+    width: 100%;
+    text-align: center;
+}
+.overlay>img{
+    border-radius: 0px;
+    margin-top: 0.7%;
+    margin-bottom: 1%;
+}
+.overlay h2{
+    font-size: 37px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 3.5%;
+}
+.overlay p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3.8%;
+}
+.overlay .transparent-btn{
+    margin: 5% 0%;
+    color: white;
+    border-color: white;
+}
+
+.pink-overlay{
+    position: absolute;
+    top: 69.5%;
+    left: 5.8%;
+    width: 77.3%;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5% 5.5%;
+    background-color: #fce7f3;
+}
+.pink-overlay .icon{
+    width: 25%;
+}
+.pink-overlay img{
+    width: 82px;
+    height: 82px;
+}
+.pink-overlay .icon h3{
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 4%;
+    color: #831843;
+}
+
+footer{
+    background-color: var(--primecolor);
+    padding: 5% 0;
+}
+.parent{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent nav{
+    width: 100%;
+}
+.two-rows{
+    display: none;
+}
+.parent nav ul{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent nav ul li a{
+    color: white;
+}
+.parent .logo, .icons i{
+    color: white;
+    font-size: 25px;
+}
+.parent .logo {
+    margin-bottom: 1%;
+}
+.parent .logo a {
+    color: white;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}

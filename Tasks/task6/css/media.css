@@ -1,0 +1,188 @@
+@media (max-width: 1210px){
+    .wellbeing-content h3 {
+        font-size: 30px;
+    }
+    .left-items img{
+        width: 10%;
+        bottom: 80%;
+    }
+    .items img{
+        width: 10%;
+        bottom: 80%;
+    }
+}
+@media (max-width: 1150px){
+    .nav nav ul{
+        width: 60%;
+    }
+    .welldoing-right-img{
+        width: 20%;
+    }
+    .welldoing-content{
+        justify-content: center;
+    }
+    .layering-img{
+        width: 20%;
+    }
+    .welldoing-content-reverse{
+        justify-content: space-around;
+    }
+    .parent nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .parent nav ul{
+        width: 45%;
+    }
+    .parent nav ul li{
+        width: 10%;
+    }
+}
+@media (max-width: 1120px){
+    .left-items img{
+        width: 10%;
+        bottom: 70%;
+    }
+    .items img{
+        width: 10%;
+        bottom: 70%;
+    }
+}
+@media (max-width: 1024px){
+    .hidden-img{
+        display: none;
+    }
+    .welldoing-content{
+        width: 100%;
+        justify-content: center;
+    }
+    .m-left-10{
+        margin-left: 10%;
+    }
+    .welldoing-details{
+        width: 100%;
+    }
+    .left-items {
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+        display: flex;
+    }
+    .left-items .line{
+        text-align: center;
+    }
+    .details{
+        width: 80%;
+        margin-left: 30%;
+    }
+    .items{
+        width: 100%;
+        justify-content: center;
+    }
+    .pink-overlay .icon{
+        width: 50%;
+        margin-bottom: 3%;
+    }
+}
+@media (max-width: 980px){
+    .left-items img{
+        width: 26px;
+        height: 26px;
+    }
+    .items img{
+        width: 10%;
+        bottom: 70%;
+    }
+    .items{
+        margin-top: 5%;
+    }
+}
+@media (max-width: 820px){
+    .items img{
+        width: 5%;
+        bottom: 72%;
+    }
+    .items{
+        margin-top: 1%;
+    }
+    .parent nav{
+        display: block;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .parent nav ul{
+        width: 50%;
+        margin: 3% 0;
+    }
+    .parent nav ul li{
+        width: 10%;
+    }
+}
+@media (max-width: 730px){
+    .wellbeing-content h3 {
+        font-size: 25px;
+        margin-left: 10%;
+    }
+    .left-items img{
+        width: 8%;
+        bottom: 75%;
+    }
+    .details>h2{
+        font-size: 20px;
+    }
+    .items img{
+        width: 8%;
+        bottom: 78%;
+    }
+}
+@media (max-width: 720px){
+    .parent nav{
+        display: block;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .parent nav ul{
+        width: 100%;
+        margin: 3% 0;
+    }
+    .parent nav ul li{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    .container .left-img, .right-img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .welldoing-content{
+        width: 100%;
+    }
+    .left-content{
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+    .wellbeing-logo{
+        width: 55%;
+        margin-left: 20%;
+    }
+    .left-img, .right-content{
+        width: 100%;
+    }
+    .pink-overlay{
+        padding: 2% 2%;
+    }
+    .pink-overlay .icon{
+        width: 100%;
+    }
+    .nav nav ul{
+        display: none;
+    }
+    .hidden-btn{
+        display: block;
+    }
+}
